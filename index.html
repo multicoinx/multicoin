@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MultiCOIN: Multi-Modal COntrollable Video INbetweening.">
+  <meta name="keywords" content="MultiCOIN, Video, Diffusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MultiCOIN: Multi-Modal COntrollable Video INbetweening.</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+  
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">MultiCOIN: Multi-Modal COntrollable Video INbetweening.</h1>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+        
+              <!-- <span class="link-block">
+            </span> -->
+              <!-- Code Link. -->
+<!--               <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" height="100%" alt="MultiCOIN" src="./static/teaser_new.png"/>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">MultiCOIN: </span> Multi-Modal COntrollable Video INbetweening.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+            <p>Video inbetweening creates smooth and natural transitions between two image frames, making it an indispensable tool for video editing and long-form video synthesis. Existing works in this domain are unable to generate large, complex, or intricate motions. In particular, they cannot accommodate the versatility of user intents and generally lack fine control over the details of intermediate frames, leading to misalignment with the creative mind. 
+To fill these gaps, we introduce \modelname{}, a video inbetweening framework that allows multi-modal controls, including depth transition and layering, motion trajectories, text prompts, and target regions for movement localization, while achieving a balance between flexibility, ease of use, and precision for fine-grained
+video interpolation. To achieve this, we adopt the Diffusion Transformer (DiT) architecture as our video generative model, due to its proven capability to generate high-quality long videos. To ensure compatibility between DiT and our multi-modal controls, we 
+map all motion controls into a common sparse and user-friendly point-based representation as the video/noise input.
+Further, to respect the variety of controls which operate at
+varying levels of granularity and influence, we separate content controls and motion controls into two branches to encode the required features before guiding the denoising process, resulting in two generators, one for motion and the other for content. Finally, we propose a stage-wise training strategy to ensure that our model learns the multi-modal controls smoothly. 
+Extensive qualitative and quantitative experiments demonstrate that multi-modal controls enable a more dynamic, customizable, and contextually accurate visual narrative.</p>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+     <!-- Paper video. -->
+  <!-- <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <video width="120%" autoplay muted controls>
+          <source src="static/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div> -->
+  <!--/ Paper video. -->
+</section>
+
+<style>
+  /* instead of display:none */
+  .tab-content { 
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+  .tab-content.is-active {
+    visibility: visible;
+    height: auto;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tabs li");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        const target = tab.dataset.tab;
+
+        // remove is-active everywhere
+        tabs.forEach(t => t.classList.remove("is-active"));
+        tabContents.forEach(c => c.classList.remove("is-active"));
+
+        // add is-active to clicked tab + corresponding content
+        tab.classList.add("is-active");
+        document.getElementById(target).classList.add("is-active");
+      });
+    });
+  });
+</script>
+
+
+<section class="section" style="display:flex;justify-content:center;align-items:center;height:auto;">
+  <div class="hero-body">
+
+    <div class="container" style="text-align:center;width:100%;max-width:1500px;margin-bottom:1rem;">
+      <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs is-centered is-toggle is-toggle-rounded">
+      <ul>
+        <li class="is-active" data-tab="tab1"><a>Our Results</a></li>
+        <li data-tab="tab2"><a>Comparison to Framer</a></li>
+      </ul>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="container" style="text-align:center;width:100%;max-width:1500px;margin-bottom:1rem;">
+
+      <!-- Tab 1 -->
+      <div class="tab-content is-active" id="tab1">
+        <div class="carousel results-carousel">
+
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/01.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/02.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/03.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/04.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/05.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/06.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/07.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/08.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/09.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/10.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/11.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/12.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/13.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/14.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/15.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/16.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/motion/17.mp4" type="video/mp4">
+            </video>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <!-- Tab 2 -->
+      <div class="tab-content" id="tab2">
+        <div class="carousel results-carousel">
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/framer/01.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/framer/02.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/framer/03.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/framer/04.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/framer/05.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div style="width:100%;max-width:1000px;margin:0 auto;">
+            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+              <source src="./static/videos/framer/06.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    
+    <pre><code>
+      @misc{tanveer2024motionbridgedynamicvideoinbetweening,
+      title={MotionBridge: Dynamic Video Inbetweening with Flexible Controls}, 
+      author={Maham Tanveer and Yang Zhou and Simon Niklaus and Ali Mahdavi Amiri and Hao Zhang and Krishna Kumar Singh and Nanxuan Zhao},
+      year={2024},
+      url={https://arxiv.org/abs/2412.13190}}
+    </code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website source code based on the source code of  <a rel="license"
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
