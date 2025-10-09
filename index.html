@@ -6,7 +6,7 @@
         content="MultiCOIN: Multi-Modal COntrollable Video INbetweening.">
   <meta name="keywords" content="MultiCOIN, Video, Diffusion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MultiCOIN: Multi-Modal COntrollable Video INbetweening.</title>
+  <title>MultiCOIN: Multi-Modal COntrollable Video INbetweening</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -45,22 +45,22 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MultiCOIN: Multi-Modal COntrollable Video INbetweening.</h1>
+          <h1 class="title is-1 publication-title">MultiCOIN: Multi-Modal COntrollable Video INbetweening</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="http://mtanveer.com/">Maham Tanveer</a><sup>1,2</sup>,</span>
             <span class="author-block">
-              <a href="https://actasidiot.github.io/">Yang Zhou</a><sup>2</sup>,</span>
+              <a href="https://yzhou359.github.io/">Yang Zhou</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://actasidiot.github.io/">Simon Niklaus</a><sup>2</sup>,</span>
+              <a href="https://sniklaus.com/welcome/">Simon Niklaus</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://www.sfu.ca/~amahdavi/">Ali Mahdavi-Amiri</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://www.sfu.ca/~amahdavi/">Hao (Richard) Zhang</a><sup>1</sup>,</span>
+              <a href="https://www.cs.sfu.ca/~haoz/">Hao (Richard) Zhang</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://www.cs.sfu.ca/~haoz/">Krishna Kumar Singh</a><sup>2</sup>,</span>
+              <a href="https://krsingh.cs.ucdavis.edu/">Krishna Kumar Singh</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://www.cs.sfu.ca/~haoz/">Nanxuan Zhao</a><sup>2</sup></span>
+              <a href="https://www.nxzhao.com/">Nanxuan Zhao</a><sup>2</sup></span>
           </div>
           <div class="is-size-6 publication-affiliations">
             <span><sup>1</sup>Simon Fraser University</span><sup>  2</sup>Adobe</span>
@@ -101,18 +101,250 @@
 
 
 
+
+
 <section class="hero teaser">
-  <div class="container">
+  <div class="container is-max-desktop">
     <div class="columns is-centered"></div>
-    <div class="hero-body">
-      <img id="teaser" height="100%" alt="MultiCOIN" src="./static/teaser_new.png"/>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">MultiCOIN: </span> Multi-Modal COntrollable Video INbetweening.
-      </h2>
-    </div>
+      <div class="hero-body">
+        <img id="teaser" height="100%" alt="MultiCOIN" src="./static/teaser_new.png"/>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">MultiCOIN: </span> Multi-Modal COntrollable Video INbetweening.
+        </h2>
+      </div>
     </div>
   </div>
 </section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <p>Given keyframes augmented with trajectory, depth, target-region, and prompt controls, our model synthesizes temporally consistent in-between frames that adhere to both the source frames and the specified controls.</p>
+      </div>
+    </div>
+</section>
+
+<div class="carousel results-carousel">
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/01_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Trajectory + Depth
+    </div>
+    <div style="position:absolute;left:60px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Input Keyframes
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Video
+    </div>
+  </div>
+
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/02_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Trajectory + Depth
+    </div>
+    <div style="position:absolute;left:60px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Input Keyframes
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Video
+    </div>
+  </div>
+
+
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/06_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Depth
+    </div>
+    <div style="position:absolute;left:60px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Input Keyframes
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Videos
+    </div>
+  </div>
+
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/08_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Trajectory
+    </div>
+    <div style="position:absolute;left:60px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Input Keyframes
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Video
+    </div>
+  </div>
+
+
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/09_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Trajectory
+    </div>
+    <div style="position:absolute;left:60px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Input Keyframes
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Video
+    </div>
+  </div>
+
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/12_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Target Region + Trajectory
+    </div>
+    <div style="position:absolute;left:5px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      First Frame + Target Region
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Video
+    </div>
+  </div>
+
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/14_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Target Region
+    </div>
+    <div style="position:absolute;left:5px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      First Frame + Target Region
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Video
+    </div>
+  </div>
+
+  
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/16_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Prompt + Trajectory
+    </div>
+    <div style="position:absolute;left:5px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      First Frame + Target Region
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Videos
+    </div>
+  </div>
+
+  <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
+    <video controls autoplay muted loop style="width:100%;object-fit:cover;">
+      <source src="./static/videos/motion/18_1_1_1.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute;left:0;right:0;top:-8px;text-align:center;
+                background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Prompt 
+    </div>
+    <div style="position:absolute;left:60px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Input Keyframes
+    </div>
+    <div style="position:absolute;left:550px;bottom:8px;
+            text-align:left;display:inline-block;
+            background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+            font-size:1.95rem;border-radius:8px;pointer-events:none">
+      Output Video
+    </div>
+  </div>
+
+  
+
+</div>
+
 
 
 <section class="section">
@@ -150,6 +382,21 @@ Extensive qualitative and quantitative experiments demonstrate that multi-modal 
     </div>
   </div> -->
   <!--/ Paper video. -->
+
+<figure style="margin:0">
+  <img
+    src="./static/pipeline_all.png"
+    alt="Pipeline diagram"
+    style="max-width:100%;height:auto;display:block;border-radius:12px"
+    width="1200" height="800"
+  />
+  <figcaption style="margin-top:.5rem;text-align:center;color:#666;font-size:.95rem">
+    Given a video we extract sparse trajectory (optical-flow) and depth controls plus target regions/masks, encode motion and content in a dual-branch embedder with optional text guidance, and integrate these multimodal signals at inference for flexible interpolation
+  </figcaption>
+</figure>
+
+
+
 </section>
 
 <style>
@@ -187,6 +434,7 @@ Extensive qualitative and quantitative experiments demonstrate that multi-modal 
 </script>
 
 
+
 <section class="section" style="display:flex;justify-content:center;align-items:center;height:auto;">
   <div class="hero-body">
 
@@ -197,8 +445,8 @@ Extensive qualitative and quantitative experiments demonstrate that multi-modal 
     <!-- Tabs -->
     <div class="tabs is-centered is-toggle is-toggle-rounded">
       <ul>
-        <li class="is-active" data-tab="tab1"><a>Our Results</a></li>
-        <li data-tab="tab2"><a>Comparison to Framer</a></li>
+        <li class="is-active" data-tab="tab1"><a>Motion Controls</a></li>
+        <li data-tab="tab2"><a>Baseline Comparison</a></li>
       </ul>
     </div>
 
@@ -208,148 +456,327 @@ Extensive qualitative and quantitative experiments demonstrate that multi-modal 
       <!-- Tab 1 -->
       <div class="tab-content is-active" id="tab1">
         <div class="carousel results-carousel">
-
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/01.mp4" type="video/mp4">
+              <source src="./static/videos/motion/03_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:8px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Trajectory + Depth
+            </div>
+            <div style="position:absolute;left:60px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Input Keyframes
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Video
+            </div>
           </div>
 
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/02.mp4" type="video/mp4">
+              <source src="./static/videos/motion/04_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:8px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Trajectory + Depth
+            </div>
+            <div style="position:absolute;left:60px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Input Keyframes
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Video
+            </div>
           </div>
 
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/03.mp4" type="video/mp4">
+              <source src="./static/videos/motion/05_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:1px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Depth
+            </div>
+            <div style="position:absolute;left:60px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Input Keyframes
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Videos
+            </div>
           </div>
 
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/04.mp4" type="video/mp4">
+              <source src="./static/videos/motion/07_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:8px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
+            <div style="position:absolute;left:60px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Input Keyframes
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Video
+            </div>
           </div>
 
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/05.mp4" type="video/mp4">
+              <source src="./static/videos/motion/10_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:8px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
+            <div style="position:absolute;left:60px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Input Keyframes
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Video
+            </div>
           </div>
 
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/06.mp4" type="video/mp4">
+              <source src="./static/videos/motion/11_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:8px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
+            <div style="position:absolute;left:60px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Input Keyframes
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Video
+            </div>
           </div>
 
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/07.mp4" type="video/mp4">
+              <source src="./static/videos/motion/17_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:8px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Trajectory + Prompt
+            </div>
+            <div style="position:absolute;left:60px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Input Keyframes
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Video
+            </div>
           </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+        <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/08.mp4" type="video/mp4">
+              <source src="./static/videos/motion/15_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:8px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Target Region
+            </div>
+            <div style="position:absolute;left:5px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              First Frame + Target Region
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Video
+            </div>
           </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+        <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/09.mp4" type="video/mp4">
+              <source src="./static/videos/motion/13_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:0;right:0;top:8px;text-align:center;
+                        background:rgba(0,0,0,.35);padding:.35rem .5rem;color:#fff;
+                        font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Target Region + Prompt
+            </div>
+            <div style="position:absolute;left:5px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              First Frame + Target Region
+            </div>
+            <div style="position:absolute;left:550px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:1.95rem;border-radius:8px;pointer-events:none">
+              Output Video
+            </div>
           </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
-            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/10.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
-            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/11.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
-            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/12.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
-            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/13.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
-            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/14.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
-            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/15.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
-            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/16.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
-            <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/motion/17.mp4" type="video/mp4">
-            </video>
-          </div>
-
+          
 
 
         </div>
       </div>
 
-      <!-- Tab 2 -->
+      <!-- Tab 3 -->
       <div class="tab-content" id="tab2">
         <div class="carousel results-carousel">
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/framer/01.mp4" type="video/mp4">
+              <source src="./static/videos/framer/01_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:200px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
+            <div style="position:absolute;left:650px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
           </div>
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/framer/02.mp4" type="video/mp4">
+              <source src="./static/videos/framer/02_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:200px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
+            <div style="position:absolute;left:650px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
           </div>
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/framer/03.mp4" type="video/mp4">
+              <source src="./static/videos/framer/03_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:200px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
+            <div style="position:absolute;left:650px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
           </div>
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/framer/04.mp4" type="video/mp4">
+              <source src="./static/videos/framer/04_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:200px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory + Depth
+            </div>
+            <div style="position:absolute;left:650px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
           </div>
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/framer/05.mp4" type="video/mp4">
+              <source src="./static/videos/framer/05_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:200px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory + Depth
+            </div>
+            <div style="position:absolute;left:650px;bottom:28px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
           </div>
-          <div style="width:100%;max-width:1000px;margin:0 auto;">
+          <div style="position:relative;width:100%;max-width:1000px;margin:0 auto">
             <video controls autoplay muted loop style="width:100%;object-fit:cover;">
-              <source src="./static/videos/framer/06.mp4" type="video/mp4">
+              <source src="./static/videos/framer/06_1_1.mp4" type="video/mp4">
             </video>
+            <div style="position:absolute;left:130px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory + Prompt ("a flower rotates")
+            </div>
+            <div style="position:absolute;left:650px;bottom:8px;
+                    text-align:left;display:inline-block;
+                    background:rgba(0,0,0,.35);padding:.35rem .6rem;color:#fff;
+                    font-size:0.95rem;border-radius:8px;pointer-events:none">
+              Trajectory
+            </div>
           </div>
+
+
         </div>
       </div>
 
@@ -375,6 +802,19 @@ Extensive qualitative and quantitative experiments demonstrate that multi-modal 
   </div>
 </section> -->
 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    
+    <pre><code>
+      @misc{tanveer2025multicoin,
+      title={MultiCOIN: Multi-Modal COntrollable Video INbetweening}, 
+      author={Maham Tanveer and Yang Zhou and Simon Niklaus and Ali Mahdavi Amiri and Hao Zhang and Krishna Kumar Singh and Nanxuan Zhao},
+      year={2025},
+      url={}}
+    </code></pre>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
@@ -408,16 +848,3 @@ Extensive qualitative and quantitative experiments demonstrate that multi-modal 
 </body>
 </html>
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    
-    <pre><code>
-      @misc{tanveer2024motionbridgedynamicvideoinbetweening,
-      title={MotionBridge: Dynamic Video Inbetweening with Flexible Controls}, 
-      author={Maham Tanveer and Yang Zhou and Simon Niklaus and Ali Mahdavi Amiri and Hao Zhang and Krishna Kumar Singh and Nanxuan Zhao},
-      year={2024},
-      url={https://arxiv.org/abs/2412.13190}}
-    </code></pre>
-  </div>
-</section>
