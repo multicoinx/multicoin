@@ -391,7 +391,7 @@ Extensive qualitative and quantitative experiments demonstrate that multi-modal 
     width="1200" height="800"
   />
   <figcaption style="margin-top:.5rem;text-align:center;color:#666;font-size:.95rem">
-    Given a video we extract sparse trajectory (optical-flow) and depth controls plus target regions/masks, encode motion and content in a dual-branch embedder with optional text guidance, and integrate these multimodal signals at inference for flexible interpolation
+    Given a video X, we extract multi-modal motion controls through two generators: the Sparse Motion Generator via optical flow and the Sparse Depth Generator for depth maps, both producing sparse RGB points for trajectory and depth control. An Augmented Frame Generator computes target regions and masks to enable fine-grained content control. All control signals are encoded via a dual-branch embedder architecture that separately captures motion and content features. In addition, a text prompt condition is processed by a text encoder to provide semantic guidance over the generated content. At inference, the model flexibly integrates these multi-modal controls for interpolation.
   </figcaption>
 </figure>
 
